@@ -16,7 +16,7 @@ cv:
     # Note: the CV template always renders Experience before Education.
     Experience:
       - company: NK Securities Research
-        position: Intern
+        position: SDE Intern
         start_date: May 2026
         end_date: Jul 2026
         # summary: add a line about your team / what you worked on
@@ -24,7 +24,7 @@ cv:
         #   - Built X that did Y.
 
       - company: Texas Instruments
-        position: Summer Intern
+        position: SDE Intern (PPO)
         start_date: May 2025
         end_date: Jul 2025
         # summary: add a line about your project
