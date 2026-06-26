@@ -85,7 +85,7 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: false # sticky-bottom footer (hosts socials + note); pinned to bottom via CSS
+footer_fixed: true
 search_enabled: false # Cmd-K search palette disabled
 socials_in_search: false
 posts_in_search: false

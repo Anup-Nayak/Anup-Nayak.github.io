@@ -14,7 +14,7 @@ profile:
     <p class="profile-email">anup.cse.iitd <em>at</em> gmail.com</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false # social icons live in the footer now (shown on every page, pinned to bottom)
+social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: false # includes a list of news items
