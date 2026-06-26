@@ -7,13 +7,12 @@ subtitle: Dual-degree (B.Tech + M.Tech) Computer Science @ <a href='https://www.
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
-    <p><strong>Anup Nayak</strong></p>
+    <p class="profile-name">Anup Nayak</p>
     <p>Dual Degree (B.Tech + M.Tech), CSE</p>
     <p>Final year · IIT Delhi</p>
-    <p>anup.cse.iitd <em>at</em> gmail.com</p>
-    <p><a href="https://github.com/Anup-Nayak" target="_blank">github.com/Anup-Nayak</a></p>
+    <p class="profile-email">anup.cse.iitd <em>at</em> gmail.com</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page

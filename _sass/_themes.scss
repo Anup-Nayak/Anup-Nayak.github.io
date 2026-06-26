@@ -212,3 +212,86 @@ html[data-theme-setting="light"] {
 #light-toggle:hover .fa-half-sun-moon::after {
   color: var(--global-theme-color);
 }
+
+/*******************************************************************************
+ * About-page polish (local tweaks layered on al_folio_core components).
+ * `!important` is used where a gem rule (loaded after this file) would
+ * otherwise win — these are cosmetic overrides only.
+ ******************************************************************************/
+
+/* Name + subtitle */
+.post .post-header .post-title {
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.35rem;
+}
+
+.post .post-header .desc {
+  color: var(--global-text-color-light);
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+}
+
+/* Bio readability */
+.post .clearfix p {
+  line-height: 1.7;
+}
+
+/* Profile sidebar info — gem renders this in cramped monospace */
+.profile .more-info {
+  font-family: inherit !important;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--global-text-color-light);
+  margin-top: 0.9rem;
+}
+
+.profile .more-info p {
+  display: block !important; // gem sets inline-block, which jams the lines together
+  margin: 0 0 0.15rem 0 !important;
+}
+
+.profile .more-info .profile-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--global-text-color);
+  margin-bottom: 0.25rem !important;
+}
+
+.profile .more-info .profile-email {
+  margin-top: 0.4rem !important;
+}
+
+/* Social icons — gem ships these at a huge 4rem; scale them down and tidy up */
+.social {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.social .contact-icons {
+  font-size: 1.6rem !important;
+}
+
+.social .contact-icons a {
+  margin: 0 0.55rem;
+}
+
+.social .contact-icons a img,
+.social .contact-icons a svg {
+  width: 1.6rem !important;
+  height: 1.6rem !important;
+  margin-bottom: 0 !important;
+}
+
+.social .contact-icons a svg image {
+  width: 1.6rem !important;
+  height: 1.6rem !important;
+}
+
+.social .contact-note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
