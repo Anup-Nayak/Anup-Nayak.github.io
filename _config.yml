@@ -85,7 +85,7 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: false # use the spacious sticky-bottom footer (hosts the persistent profile/socials)
+footer_fixed: true
 search_enabled: false # Cmd-K search palette disabled
 socials_in_search: false
 posts_in_search: false
