@@ -6,4 +6,4 @@ github_username: Anup-Nayak # your GitHub username
 linkedin_username: anupnayak # your LinkedIn vanity name (the part after /in/)
 # twitter_username: # add your X/Twitter handle (without @) to show the icon
 # instagram_username: # add your Instagram handle to show the icon
-rss_icon: false # set to true to show the RSS feed icon
+# rss_icon: true # uncomment to show an RSS feed icon (hidden by default)
