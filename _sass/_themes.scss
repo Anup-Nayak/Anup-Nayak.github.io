@@ -297,71 +297,85 @@ html[data-theme-setting="light"] {
 }
 
 /*******************************************************************************
- * Left profile sidebar (persistent identity column on every page).
+ * Sticky footer + persistent footer profile (photo, name, socials, email).
+ * Shown on every page; pinned to the bottom of the viewport on short pages.
  ******************************************************************************/
 
-.profile-sidebar {
-  margin-bottom: 1.75rem;
+/* Pin the sticky-bottom footer to the bottom even when content is short */
+body.sticky-bottom-footer {
+  display: flex;
+  flex-direction: column;
 }
 
-.profile-sidebar .profile-card {
+body.sticky-bottom-footer.fixed-top-nav {
+  min-height: calc(100vh - 57px); // 57px = fixed navbar height (body padding-top)
+}
+
+body.sticky-bottom-footer:not(.fixed-top-nav) {
+  min-height: 100vh;
+}
+
+body.sticky-bottom-footer > [role="main"] {
+  flex: 1 0 auto;
+}
+
+body.sticky-bottom-footer > footer.sticky-bottom {
+  flex-shrink: 0;
+}
+
+/* Footer profile block */
+footer.sticky-bottom .footer-profile {
   text-align: center;
+  margin-bottom: 1.6rem;
 }
 
-.profile-sidebar .profile-photo {
-  display: block;
-  width: 100%;
-  max-width: 200px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+footer.sticky-bottom .footer-avatar {
+  width: 84px;
+  height: 84px;
   border-radius: 50%;
-  margin: 0 auto 1rem;
+  object-fit: cover;
+  margin-bottom: 0.65rem;
 }
 
-.profile-sidebar .profile-name-side {
-  font-size: 1.3rem;
+footer.sticky-bottom .footer-name {
   font-weight: 700;
-  line-height: 1.2;
+  font-size: 1rem;
+  margin-bottom: 0.45rem;
 }
 
-.profile-sidebar .profile-tagline {
-  color: var(--global-text-color-light);
-  font-size: 0.95rem;
-  margin: 0.35rem 0 0.9rem;
+footer.sticky-bottom .footer-profile .contact-icons {
+  font-size: 1.5rem;
 }
 
-.profile-sidebar .contact-icons {
-  font-size: 1.4rem;
+footer.sticky-bottom .footer-profile .contact-icons a {
+  margin: 0 0.5rem;
 }
 
-.profile-sidebar .contact-icons a {
-  margin: 0 0.4rem;
-}
-
-.profile-sidebar .contact-icons a i::before {
+footer.sticky-bottom .footer-profile .contact-icons a i::before {
   color: var(--global-text-color);
   transition: color 0.2s ease-in-out;
 }
 
-.profile-sidebar .contact-icons a:hover i::before {
+footer.sticky-bottom .footer-profile .contact-icons a:hover i::before {
   color: var(--global-theme-color);
 }
 
-.profile-sidebar .contact-icons a img,
-.profile-sidebar .contact-icons a svg {
-  width: 1.4rem;
-  height: 1.4rem;
+footer.sticky-bottom .footer-profile .contact-icons a img,
+footer.sticky-bottom .footer-profile .contact-icons a svg {
+  width: 1.5rem;
+  height: 1.5rem;
   margin-bottom: 0;
 }
 
-/* On wider screens, pin the sidebar and align it with the content */
-@media (min-width: 768px) {
-  .profile-sidebar {
-    margin-bottom: 0;
-  }
+footer.sticky-bottom .footer-note {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  max-width: 32rem;
+  margin: 0.6rem auto 0;
+}
 
-  .profile-sidebar .profile-card {
-    position: sticky;
-    top: 80px;
-  }
+footer.sticky-bottom .footer-copyright {
+  margin-top: 1.4rem;
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
 }
