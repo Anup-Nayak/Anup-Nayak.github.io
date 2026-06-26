@@ -9,8 +9,8 @@ last_name: Nayak
 contact_note: >
   Best reached over email — happy to talk systems, networking, or anything in between.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Anup Nayak — dual-degree (B.Tech + M.Tech) Computer Science student at IIT Delhi, drawn to the systems
-  side of computing: operating systems, computer networks, and low-level programming.
+  Anup Nayak, a Computer Science student at IIT Delhi who enjoys the systems side of computing:
+  operating systems, computer networks, and what happens underneath the code.
 footer_text: >
   Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and the
   <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme.

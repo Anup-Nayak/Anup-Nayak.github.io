@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Dual-degree (B.Tech + M.Tech) Computer Science @ <a href='https://www.iitd.ac.in/' target='_blank'>IIT Delhi</a> · systems, networks & operating systems.
+subtitle: CSE '27 @ <a href='https://www.iitd.ac.in/' target='_blank'>IIT Delhi</a>
 
 profile:
   align: right
@@ -10,8 +10,7 @@ profile:
   image_circular: true # crops the image to make it circular
   more_info: >
     <p class="profile-name">Anup Nayak</p>
-    <p>Dual Degree (B.Tech + M.Tech), CSE</p>
-    <p>Final year · IIT Delhi</p>
+    <p>Computer Science, IIT Delhi</p>
     <p class="profile-email">anup.cse.iitd <em>at</em> gmail.com</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -24,8 +23,8 @@ latest_posts:
   enabled: false
 ---
 
-I'm **Anup**, a fifth-year dual-degree (B.Tech + M.Tech) Computer Science student at **IIT Delhi**. I'm most at home on the **systems** side of computing — operating systems, computer networks, and the low-level details of how programs actually run.
+Hi, I'm Anup. I'm in the final year of the B.Tech + M.Tech program in Computer Science at IIT Delhi. Most of what I enjoy sits on the systems side of computing: operating systems, computer networks, and understanding what's really going on underneath the code I write.
 
-In the summer of 2025 I interned at **Texas Instruments**, and in the summer of 2026 I'm interning at **NK Securities Research** — see my [CV](/cv/) for details. You can also browse the [courses](/courses/) I've taken at IITD, or skim through my [projects](/projects/).
+Last summer I interned at Texas Instruments, and this summer I'm at NK Securities Research as an SDE intern. My [CV](/cv/) has the full story, and you can also flip through the [courses](/courses/) I've taken or a few [projects](/projects/).
 
-Away from the keyboard, I play **chess** and **poker**, and I'm usually watching **cricket** whenever there's a match on.
+When I'm away from the laptop, you'll usually find me playing chess or poker, or watching cricket.
