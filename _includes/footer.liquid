@@ -1,0 +1,59 @@
+{% comment %}
+  LOCAL OVERRIDE of al_folio_core's _includes/footer.liquid.
+  Adds a persistent profile block (photo + name + social icons + email + note)
+  to the sticky-bottom footer so it appears on every page, anchored at the bottom.
+  The fixed-bottom branch is kept identical to upstream for safety.
+{% endcomment %}
+
+{% capture footer_contents %}
+  &copy; Copyright {{ site.time | date: '%Y' }}
+  {{ site.first_name }}
+  {{ site.middle_name }}
+  {{ site.last_name }}. {{ site.footer_text }}
+  {% if site.impressum_path %}
+    <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+  {% endif %}
+  {% if site.last_updated %}
+    Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+  {% endif %}
+{% endcapture %}
+
+{% if site.footer_fixed %}
+  <footer class="fixed-bottom" role="contentinfo">
+    <div class="container mt-0">
+      {{ footer_contents }}
+    </div>
+  </footer>
+{% else %}
+  <footer class="sticky-bottom mt-5" role="contentinfo">
+    {% if site.newsletter.enabled %}
+      {% if site.plugins contains 'al_newsletter' %}
+        {% include plugins/al_newsletter_form_center.liquid %}
+      {% else %}
+        {% include newsletter.liquid %}
+      {% endif %}
+    {% endif %}
+
+    <div class="container">
+      <div class="footer-profile">
+        {% if site.first_name or site.last_name %}
+          <a href="{{ '/' | relative_url }}" aria-label="Home">
+            <img
+              class="footer-avatar"
+              src="{{ '/assets/img/prof_pic.jpg' | relative_url }}"
+              alt="{{ site.first_name }} {{ site.last_name }}"
+              loading="lazy"
+            >
+          </a>
+        {% endif %}
+        <div class="footer-name">{{ site.first_name }} {{ site.last_name }}</div>
+        <div class="contact-icons">{% social_links %}</div>
+        {% if site.contact_note %}
+          <div class="footer-note">{{ site.contact_note }}</div>
+        {% endif %}
+      </div>
+
+      <div class="footer-copyright">{{ footer_contents }}</div>
+    </div>
+  </footer>
+{% endif %}

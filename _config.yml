@@ -7,7 +7,7 @@ first_name: Anup
 middle_name:
 last_name: Nayak
 contact_note: >
-  Best reached over email — happy to talk systems, networking, or anything in between.
+  Best reached over email. Happy to talk systems, networking, or anything in between.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Anup Nayak, a Computer Science student at IIT Delhi who enjoys the systems side of computing:
   operating systems, computer networks, and what happens underneath the code.
@@ -85,7 +85,7 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false # use the spacious sticky-bottom footer (hosts the persistent profile/socials)
 search_enabled: false # Cmd-K search palette disabled
 socials_in_search: false
 posts_in_search: false
