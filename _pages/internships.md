@@ -1,6 +1,6 @@
 ---
 layout: page
-title: internships
+title: Internships
 permalink: /internships/
 description: Industry experience and internships.
 nav: true

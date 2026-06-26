@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Dual-degree (B.Tech + M.Tech) Computer Science @ <a href='https://www.iitd.ac.in/' target='_blank'>IIT Delhi</a> · systems, networks & operating systems.
 

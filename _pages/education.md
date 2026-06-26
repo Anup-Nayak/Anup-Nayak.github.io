@@ -1,6 +1,6 @@
 ---
 layout: page
-title: education
+title: Education
 permalink: /education/
 description: Where I've studied and what I've studied.
 nav: true
