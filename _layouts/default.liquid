@@ -1,0 +1,61 @@
+{% comment %}
+  LOCAL OVERRIDE of al_folio_core's _layouts/default.liquid.
+  Adds a persistent left profile sidebar (photo, name, tagline, socials) shown on
+  every page, with the page content in the right column. The upstream TOC-sidebar
+  branch is intentionally dropped (the profile sidebar takes the left column).
+{% endcomment %}
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <!-- Head -->
+  <head>
+    {% if page.redirect %}
+      {% if page.redirect == true %}
+        {% assign redirect = site.baseurl | append: '/' %}
+      {% elsif page.redirect contains '://' %}
+        {% assign redirect = page.redirect %}
+      {% else %}
+        {% assign redirect = page.redirect | relative_url %}
+      {% endif %}
+      <meta http-equiv="refresh" content="3; url={{ redirect }}">
+    {% endif %}
+    {% include head.liquid %}
+  </head>
+
+  <!-- Body -->
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+    <!-- Header -->
+    {% include header.liquid %}
+
+    <!-- Content -->
+    <div class="container mt-5" role="main">
+      <div class="row">
+        <!-- Persistent profile sidebar (stacks on top on small screens) -->
+        <aside class="col-sm-4 col-md-3 profile-sidebar">
+          <div class="profile-card">
+            <img
+              class="profile-photo"
+              src="{{ '/assets/img/prof_pic.jpg' | relative_url }}"
+              alt="{{ site.first_name }} {{ site.last_name }}"
+              loading="eager"
+              style="width: 100%; max-width: 200px; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 50%;"
+            >
+            <div class="profile-name-side">{{ site.first_name }} {{ site.last_name }}</div>
+            <p class="profile-tagline">CSE '27 @ <a href="https://www.iitd.ac.in/" target="_blank" rel="noopener">IIT Delhi</a></p>
+            <div class="contact-icons">{% social_links %}</div>
+          </div>
+        </aside>
+
+        <!-- Main content -->
+        <div class="col-sm-8 col-md-9 main-content">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    {% include footer.liquid %}
+
+    <!-- JavaScripts -->
+    {% include scripts.liquid %}
+  </body>
+</html>
