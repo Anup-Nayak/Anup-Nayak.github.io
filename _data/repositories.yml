@@ -1,14 +1,15 @@
+# Your GitHub profile — shows profile stats and trophies on the /repositories/ page.
 github_users:
-  - torvalds
-  - alshedivat
+  - Anup-Nayak
 
 repo_description_lines_max: 2
 
+# PLACEHOLDERS — replace these 6 entries with your own repos in the form `Anup-Nayak/repo-name`.
+# Until you do, these systems/networking projects are shown as examples so the page renders.
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - torvalds/linux
+  - redis/redis
+  - git/git
+  - curl/curl
+  - netty/netty
+  - libuv/libuv
