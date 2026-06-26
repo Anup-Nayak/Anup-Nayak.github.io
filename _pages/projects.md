@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 description: A growing collection of things I've built — systems, tools, and side projects.
 nav: true
-nav_order: 4
+nav_order: 2
 display_categories: [systems, other]
 horizontal: false
 ---

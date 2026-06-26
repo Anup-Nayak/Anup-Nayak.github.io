@@ -4,7 +4,7 @@ title: Courses
 permalink: /courses/
 description: Selected coursework from the CSE curriculum at IIT Delhi, grouped by area and listed in the order taught.
 nav: true
-nav_order: 2
+nav_order: 1
 toc:
   sidebar: left
 ---

@@ -27,6 +27,6 @@ latest_posts:
 
 I'm **Anup**, a fifth-year dual-degree (B.Tech + M.Tech) Computer Science student at **IIT Delhi**. I'm most at home on the **systems** side of computing — operating systems, computer networks, and the low-level details of how programs actually run.
 
-In the summer of 2025 I interned at **Texas Instruments**, and in the summer of 2026 I'm interning at **NK Securities Research**. You can read more about both on the [internships](/internships/) page, browse the [courses](/courses/) I've taken at IITD, or skim through my [projects](/projects/).
+In the summer of 2025 I interned at **Texas Instruments**, and in the summer of 2026 I'm interning at **NK Securities Research** — see my [CV](/cv/) for details. You can also browse the [courses](/courses/) I've taken at IITD, or skim through my [projects](/projects/).
 
 Away from the keyboard, I play **chess** and **poker**, and I'm usually watching **cricket** whenever there's a match on.
